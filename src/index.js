@@ -15,7 +15,7 @@ const app = express();
 
 app.set("port", process.env.PORT || "4000");
 
-app.use(express.json(), auth);
+app.use(auth);
 
 const typeDefs = importSchema("src/schema.graphql");
 
