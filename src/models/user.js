@@ -18,6 +18,9 @@ const UserSchema = new Schema({
     required: true,
     unique: true,
   },
+  picture: {
+    type: String,
+  },
 });
 
 UserSchema.pre("save", function(next) {
